@@ -1,0 +1,5 @@
+To do list:
+
+1) Make sure alerts are being created correctly.
+2) Some objects such as UserProject can be created twice. This can be fixed with a unique pair field at the database model.
+3) Finish tests.
