@@ -10,6 +10,7 @@ Run the following commands:
 
 mkdir test
 cd test
+git init
 git clone https://github.com/royroy21/ProjectManagementProgram.git
 cd ProjectManagementProgram/CodeBase/CodeBase/ProjectManagementProgram/
 source ../../venv/bin/activate
