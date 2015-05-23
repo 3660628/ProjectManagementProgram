@@ -8,22 +8,21 @@ Install Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 Run the following commands:
 
-command_prompt$ mkdir test
-command_prompt$ cd test
-command_prompt$ git clone https://github.com/royroy21/ProjectManagementProgram.git
-command_prompt$ cd ProjectManagementProgram/CodeBase/CodeBase/ProjectManagementProgram/
-command_prompt$ source ../../venv/bin/activate
-command_prompt$ pip install django
-command_prompt$ pip install djangorestframework
-command_prompt$ python manage.py syncdb
+mkdir test
+cd test
+git clone https://github.com/royroy21/ProjectManagementProgram.git
+cd ProjectManagementProgram/CodeBase/CodeBase/ProjectManagementProgram/
+source ../../venv/bin/activate
+pip install django
+pip install djangorestframework
+python manage.py syncdb
 
 At this stage you will be prompted to enter an admin username and password for use with the admin site.
 
-command_prompt$ python manage.py test
+python manage.py test
 
 This will run all UnitTests for the application as specified in the tests.py file. These should all return without errors. 
 
-command_prompt$ python manage.py runserver
+python manage.py runserver
 
 This will start a web browser running the application. Going to the URL http://127.0.0.1:8000/admin/ and entering the admin username and password will give you access to the admin site. Using this web browser you can also access the API calls created. For example going to http://127.0.0.1:8000/api/user/ will display the user you created when using the python manage.py syncdb command. Try adding another user using the form provided and refreshing the page. This will now display two users. Going to http://127.0.0.1:8000/api/user/1/ will display the user an id of 1. This will prompt you for authentication details. Other API URLs can be accessed in this way however this web service is only meant to be a development tool and should be turned off in production.
-
